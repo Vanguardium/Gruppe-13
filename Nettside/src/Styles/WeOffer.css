@@ -1,0 +1,34 @@
+.sections {
+    display: flex;
+    justify-content: space-between;
+    margin: 4em 13em 4em 13em;
+    background-color: whitesmoke;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+
+.flip {
+    flex-direction: row-reverse;
+    margin: 7em;
+}
+
+.textBox {
+    width: 100%;
+}
+
+.pageContainer img {
+    height: 300px;
+    object-fit: cover;
+    width: 50%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+
+.pageContainer h4 {
+    font-size: 25px;
+    margin-bottom: .5em;
+}
+
+.pageContainer p {
+    font-size: 16px;
+}
