@@ -1,6 +1,12 @@
 import React from 'react';
 import '../Styles/WeOffer.css';
 import SchoolFrontPage from '../Images/SchoolFrontPage.png';
+import OpenWokSpace from '../Images/OpenWokSpace.png';
+import PrivateOffices from '../Images/PrivateOffices.png';
+import Lounge from '../Images/Lounge.png';
+import OfficeKitchen from '../Images/OfficeKitchen.png';
+import PrinterArea from '../Images/PrinterArea.png';
+import GameRoom from '../Images/GameRoom.png';
 
 function WeOffer() {
   return (
@@ -18,7 +24,7 @@ function WeOffer() {
                 working here.
               </p>
             </div>
-            <img src={SchoolFrontPage} alt='' />
+            <img src={OpenWokSpace} alt='' />
           </div>
           <div className='sections flip'>
             <div className='textBox'>
@@ -32,7 +38,7 @@ function WeOffer() {
                 discussions. There are 5 meeting rooms in total
               </p>
             </div>
-            <img src={SchoolFrontPage} alt='' />
+            <img src={PrivateOffices} alt='' />
           </div>
           <div className='sections'>
             <div className='textBox'>
@@ -43,7 +49,7 @@ function WeOffer() {
                 relaxation.v
               </p>
             </div>
-            <img src={SchoolFrontPage} alt='' />
+            <img src={Lounge} alt='' />
           </div>
           <div className='sections flip'>
             <div className='textBox'>
@@ -54,7 +60,7 @@ function WeOffer() {
                 tea, and snacks.
               </p>
             </div>
-            <img src={SchoolFrontPage} alt='' />
+            <img src={OfficeKitchen} alt='' />
           </div>
           <div className='sections'>
             <div className='textBox'>
@@ -63,7 +69,7 @@ function WeOffer() {
                 Equipment for printing, scanning, and photocopying documents.
               </p>
             </div>
-            <img src={SchoolFrontPage} alt='' />
+            <img src={PrinterArea} alt='' />
           </div>
           <div className='sections flip'>
             <div className='textBox'>
@@ -73,7 +79,7 @@ function WeOffer() {
                 video games, encouraging breaks and social interaction.
               </p>
             </div>
-            <img src={SchoolFrontPage} alt='' />
+            <img src={GameRoom} alt='' />
           </div>
         </div>
       </div>
