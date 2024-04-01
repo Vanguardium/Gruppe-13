@@ -1,6 +1,5 @@
 import React from 'react';
 import '../Styles/WeOffer.css';
-import SchoolFrontPage from '../Images/SchoolFrontPage.png';
 import OpenWokSpace from '../Images/OpenWokSpace.png';
 import PrivateOffices from '../Images/PrivateOffices.png';
 import Lounge from '../Images/Lounge.png';
