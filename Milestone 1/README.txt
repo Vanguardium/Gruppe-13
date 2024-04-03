@@ -1,0 +1,2 @@
+Gruppe 13, Sondre Laugerud Moe, Sondre Christoffer Mogen, Marcus Gundersen, Marcus Einarsen, Rikke Hjelseth Larsen, Christoffer Johansen
+In the WBS you wil also find Requierment gathering and analasys
