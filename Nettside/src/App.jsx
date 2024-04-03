@@ -24,6 +24,7 @@ const ScrollToTop = () => {
   return null;
 };
 
+// Router mellom sidene
 function App() {
   return (
     <>
