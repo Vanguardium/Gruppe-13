@@ -1,15 +1,9 @@
 import React from 'react';
-import OpenWokSpace from '../Images/OpenWokSpace.png';
-import PrivateOffices from '../Images/PrivateOffices.png';
-import Lounge from '../Images/Lounge.png';
-import OfficeKitchen from '../Images/OfficeKitchen.png';
-import PrinterArea from '../Images/PrinterArea.png';
-import GameRoom from '../Images/GameRoom.png';
 
 function WeOffer() {
   return (
     <div className='max-w-[1240px] mx-auto px-4'>
-      <div className='grid gap-6'>
+      <div className='grid gap-10'>
         <div className='bg-white p-6 md:p-8 rounded-lg shadow-md flex flex-col items-center md:flex-row mt-[5rem]'>
           <div>
             <h4 className='text-xl font-semibold mb-2 mt'>Open Workspace</h4>

@@ -40,15 +40,15 @@ function Home() {
           </div>
 
           <div className='w-full shadow-xl flex flex-col p-4 my-4 rounded-lg hover:scale-105 duration-300 bg-white'>
-            <h2 className='text-2xl font-bold text-center pt-8'>Om Oss</h2>
+            <h2 className='text-2xl font-bold text-center pt-8'>Booking</h2>
             <div className='text-center font-medium'>
-              <p className='py-2 border-b mx-2 mt-8'>Fellesskap</p>
-              <p className='py-2 border-b mx-2'>Innovasjon</p>
-              <p className='py-2 border-b mx-2'>Samarbeid</p>
+              <p className='py-2 border-b mx-2 mt-8'>Booking av pult</p>
+              <p className='py-2 border-b mx-2'>Informasjon</p>
+              <p className='py-2 border-b mx-2'>Medlemskap</p>
             </div>
             <Link
               className='bg-red-600 text-white text-center w-[200px] rounded-md font-medium my-6 mx-auto px-6 py-3'
-              to='/About'
+              to='/Booking'
             >
               <button>Les mer</button>
             </Link>
