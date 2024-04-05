@@ -54,7 +54,7 @@ function WeOffer() {
           </div>
         </div>
 
-        <div className='bg-white p-6 md:p-8 rounded-lg shadow-md flex flex-col items-center md:flex-row'>
+        <div className='bg-white p-6 md:p-8 rounded-lg shadow-md flex flex-col md:flex-row'>
           <div>
             <h4 className='text-xl font-semibold mb-2'>
               Printing and Scanning area
