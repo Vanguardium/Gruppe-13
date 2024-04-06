@@ -23,7 +23,7 @@ function Footer() {
             </li>
             <li className='py-1 text-sm'>
               E-post: <span> </span>
-              <span className='text-red-500 underline hover:cursor-pointer'>
+              <span className='text-red-500 hover:cursor-pointer'>
                 USNCoworkingSpace@example.com
               </span>
             </li>

@@ -1,8 +1,11 @@
 import React from 'react';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 function About() {
   return (
     <>
+      <Navbar />
       <div className='p-4'>
         <div className='max-w-[1240px] mx-auto bg-white p-6 md:p-8 rounded-lg shadow-md flex flex-col md:flex-col mt-[2rem]'>
           <h4 className='border-b border-gray-600 font-bold text-[25px]'>
@@ -23,6 +26,7 @@ function About() {
           </p>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

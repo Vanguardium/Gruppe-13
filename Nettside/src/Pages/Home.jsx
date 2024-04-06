@@ -1,10 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import UserStories from '../Components/UserStories';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 function Home() {
   return (
     <>
+      <Navbar />
       {/* Hoved seksjonen av hjemme siden */}
       <div className='w-full py-[2rem] px-4 md:py-[8rem]'>
         <div className='max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8'>
@@ -55,7 +58,6 @@ function Home() {
           </div>
         </div>
       </div>
-
       {/* Seksjon nr 2 av hjemmesiden */}
       <div className='w-full py-16 text-white px-4'>
         <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3 pb-[10rem]'>
@@ -86,6 +88,7 @@ function Home() {
       <div className='bg-white py-[8rem] text-center rounded-lg shadow-md'>
         <UserStories />
       </div>
+      <Footer />
     </>
   );
 }

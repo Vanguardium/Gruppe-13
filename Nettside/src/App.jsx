@@ -5,8 +5,7 @@ import {
   Route,
   useLocation,
 } from 'react-router-dom';
-import Navbar from './Components/Navbar';
-import Footer from './Components/Footer';
+
 import Home from './Pages/Home';
 import Membership from './Pages/Membership';
 import WeOffer from './Pages/WeOffer';
@@ -30,7 +29,6 @@ function App() {
     <>
       <Router>
         <ScrollToTop />
-        <Navbar />
         <Routes>
           <Route path='/' exact Component={Home} />
           <Route path='/Membership' Component={Membership} />
@@ -38,7 +36,6 @@ function App() {
           <Route path='/WeOffer' Component={WeOffer} />
           <Route path='/About' Component={About} />
         </Routes>
-        <Footer />
       </Router>
     </>
   );

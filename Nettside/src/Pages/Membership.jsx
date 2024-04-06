@@ -1,5 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 function Membership() {
   const [flipped, setFlipped] = useState(false);
@@ -10,6 +12,7 @@ function Membership() {
 
   return (
     <>
+      <Navbar />
       <div className='w-full py-[2rem] px-4 md:py-[8rem]'>
         <div className='max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8'>
           <div className='w-full shadow-xl flex flex-col p-4 rounded-lg hover:scale-105 duration-300 bg-white'>
@@ -110,6 +113,7 @@ function Membership() {
           </div>
         </div>
       </div>
+      <Footer />s
     </>
   );
 }
