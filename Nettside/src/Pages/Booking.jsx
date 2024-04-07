@@ -7,6 +7,7 @@ import {
 } from 'react-icons/ai';
 import { MdAddBox } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import Footer from '../Components/Footer';
 
 function getDate() {
   const today = new Date();
@@ -28,12 +29,14 @@ function Booking() {
   return (
     <>
       <div>
-        <div className='p-5 py-6 flex items-center justify-between md:max-w-[1240px] mx-auto'>
+        <div className='p-5 py-6 pt-8 flex items-center justify-between md:max-w-[1240px] mx-auto'>
           <div className='font-bold text-[25px] text-white'>
-            <h1>Booking</h1>
+            <Link to='/'>
+              <h1>Booking</h1>
+            </Link>
           </div>
           <div className='flex gap-2'>
-            <button className='text-white font-semibold hover:cursor-pointer uppercase text-[15px] bg-red-600 py-2 px-3 rounded'>
+            <button className='text-white font-semibold hover:cursor-pointer uppercase text-[15px] bg-red-600 hover:bg-red-500 py-2 px-3 rounded'>
               Logg Inn
             </button>
             {/* Burger menu */}
@@ -109,7 +112,7 @@ function Booking() {
           <AiOutlineArrowRight size={20} />
         </p>
       </div>
-      {/* Grid booking systemet */}
+      {/* Grid, klokkeslettene man kan booke pulter */}
       <div className='mt-10'>
         <div className='grid grid-flow-col grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12'>
           <dvi className='bg-white py-3 font-semibold border-r'></dvi>
@@ -148,68 +151,68 @@ function Booking() {
           </dvi>
         </div>
         <div className='grid grid-flow-col grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 border border-gray-200'>
-          <dvi className='bg-white py-3 font-semibold border-r'>Pult 1</dvi>
-          <dvi className='bg-white py-3 border-r text-red-700'>
+          <dvi className='bg-gray-100 py-3 font-semibold border-r'>Pult 1</dvi>
+          <dvi className='bg-gray-100 py-3 border-r text-red-700'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 border-r text-red-700'>
+          <dvi className='bg-gray-100 py-3 border-r text-red-700'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 border-r text-red-700'>
+          <dvi className='bg-gray-100 py-3 border-r text-red-700'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 sm:border-r sm:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 sm:border-r sm:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 sm:border-r sm:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 sm:border-r sm:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 md:border-r md:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 md:border-r md:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 md:border-r md:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 md:border-r md:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 lg:border-r lg:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 lg:border-r lg:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 lg:border-r lg:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 lg:border-r lg:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 xl:border-r xl:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 xl:border-r xl:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 xl:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 xl:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
@@ -289,68 +292,68 @@ function Booking() {
         </div>
         {/* Row 3 */}
         <div className='grid grid-flow-col grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 border-b border-gray-200'>
-          <dvi className='bg-white py-3 font-semibold border-r'>Pult 3</dvi>
-          <dvi className='bg-white py-3 border-r text-red-700'>
+          <dvi className='bg-gray-100 py-3 font-semibold border-r'>Pult 3</dvi>
+          <dvi className='bg-gray-100 py-3 border-r text-red-700'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 border-r text-red-700'>
+          <dvi className='bg-gray-100 py-3 border-r text-red-700'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 border-r text-red-700'>
+          <dvi className='bg-gray-100 py-3 border-r text-red-700'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 sm:border-r sm:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 sm:border-r sm:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 sm:border-r sm:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 sm:border-r sm:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 md:border-r md:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 md:border-r md:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 md:border-r md:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 md:border-r md:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 lg:border-r lg:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 lg:border-r lg:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 lg:border-r lg:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 lg:border-r lg:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 xl:border-r xl:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 xl:border-r xl:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 xl:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 xl:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
@@ -429,68 +432,68 @@ function Booking() {
         </div>
         {/* Row 5 */}
         <div className='grid grid-flow-col grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 border-b border-gray-200'>
-          <dvi className='bg-white py-3 font-semibold border-r'>Pult 5</dvi>
-          <dvi className='bg-white py-3 border-r text-red-700'>
+          <dvi className='bg-gray-100 py-3 font-semibold border-r'>Pult 5</dvi>
+          <dvi className='bg-gray-100 py-3 border-r text-red-700'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 border-r text-red-700'>
+          <dvi className='bg-gray-100 py-3 border-r text-red-700'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 border-r text-red-700'>
+          <dvi className='bg-gray-100 py-3 border-r text-red-700'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 sm:border-r sm:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 sm:border-r sm:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 sm:border-r sm:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 sm:border-r sm:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 md:border-r md:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 md:border-r md:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 md:border-r md:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 md:border-r md:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 lg:border-r lg:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 lg:border-r lg:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 lg:border-r lg:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 lg:border-r lg:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 xl:border-r xl:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 xl:border-r xl:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 xl:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 xl:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
@@ -569,68 +572,68 @@ function Booking() {
         </div>
         {/* Row 7 */}
         <div className='grid grid-flow-col grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 border-b border-gray-200'>
-          <dvi className='bg-white py-3 font-semibold border-r'>Pult 7</dvi>
-          <dvi className='bg-white py-3 border-r text-red-700'>
+          <dvi className='bg-gray-100 py-3 font-semibold border-r'>Pult 7</dvi>
+          <dvi className='bg-gray-100 py-3 border-r text-red-700'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 border-r text-red-700'>
+          <dvi className='bg-gray-100 py-3 border-r text-red-700'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 border-r text-red-700'>
+          <dvi className='bg-gray-100 py-3 border-r text-red-700'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 sm:border-r sm:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 sm:border-r sm:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 sm:border-r sm:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 sm:border-r sm:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 md:border-r md:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 md:border-r md:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 md:border-r md:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 md:border-r md:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 lg:border-r lg:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 lg:border-r lg:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 lg:border-r lg:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 lg:border-r lg:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 xl:border-r xl:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 xl:border-r xl:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 xl:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 xl:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
@@ -709,68 +712,68 @@ function Booking() {
         </div>
         {/* Row 9 */}
         <div className='grid grid-flow-col grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 border-b border-gray-200'>
-          <dvi className='bg-white py-3 font-semibold border-r'>Pult 9</dvi>
-          <dvi className='bg-white py-3 border-r text-red-700'>
+          <dvi className='bg-gray-100 py-3 font-semibold border-r'>Pult 9</dvi>
+          <dvi className='bg-gray-100 py-3 border-r text-red-700'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 border-r text-red-700'>
+          <dvi className='bg-gray-100 py-3 border-r text-red-700'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 border-r text-red-700'>
+          <dvi className='bg-gray-100 py-3 border-r text-red-700'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 sm:border-r sm:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 sm:border-r sm:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 sm:border-r sm:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 sm:border-r sm:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 md:border-r md:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 md:border-r md:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 md:border-r md:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 md:border-r md:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 lg:border-r lg:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 lg:border-r lg:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 lg:border-r lg:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 lg:border-r lg:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 xl:border-r xl:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 xl:border-r xl:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 xl:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 xl:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
@@ -849,74 +852,77 @@ function Booking() {
         </div>
         {/* Row 11 */}
         <div className='grid grid-flow-col grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 xl:grid-cols-12 border-b border-gray-200'>
-          <dvi className='bg-white py-3 font-semibold border-r'>Pult 11</dvi>
-          <dvi className='bg-white py-3 border-r text-red-700'>
+          <dvi className='bg-gray-100 py-3 font-semibold border-r'>Pult 11</dvi>
+          <dvi className='bg-gray-100 py-3 border-r text-red-700'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 border-r text-red-700'>
+          <dvi className='bg-gray-100 py-3 border-r text-red-700'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 border-r text-red-700'>
+          <dvi className='bg-gray-100 py-3 border-r text-red-700'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 sm:border-r sm:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 sm:border-r sm:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 sm:border-r sm:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 sm:border-r sm:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 md:border-r md:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 md:border-r md:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 md:border-r md:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 md:border-r md:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 lg:border-r lg:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 lg:border-r lg:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 lg:border-r lg:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 lg:border-r lg:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 xl:border-r xl:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 xl:border-r xl:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
-          <dvi className='bg-white py-3 text-red-700 xl:block hidden'>
+          <dvi className='bg-gray-100 py-3 text-red-700 xl:block hidden'>
             <MdAddBox
               size={30}
               className='mx-auto hover:cursor-pointer hover:text-red-600'
             />
           </dvi>
         </div>
+      </div>
+      <div className='pt-[5rem]'>
+        <Footer />
       </div>
     </>
   );
