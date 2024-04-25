@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <div className='text-white flex justify-between items-center h-24 max-w-[1500px] mx-auto p-4'>
       <h1 className='w-100 text-2xl font-bold text-white hover:cursor-pointer'>
-        <Link to='/'>USNCoworking Space</Link>
+        <Link to='/'>USNStart</Link>
       </h1>
       <ul className='hidden md:flex'>
         <Link to='/' className='p-4 hover:text-red-500'>
@@ -46,7 +46,7 @@ function Navbar() {
         }
       >
         <h1 className='w-full text-2xl font-bold text-white m-4 mt-8'>
-          <Link onClick={handleNav}>USNCoworking Space</Link>
+          <Link onClick={handleNav}>USNStart</Link>
         </h1>
 
         <ul className='uppercase flex flex-col p-4 text-[15px]'>

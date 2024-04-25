@@ -59,7 +59,7 @@ function Booking() {
             >
               <div className='text-white'>
                 <h1 className='w-full text-2xl font-bold text-white m-4 mt-8'>
-                  <Link onClick={handleNav}>USNCoworking Space</Link>
+                  <Link onClick={handleNav}>USNStart</Link>
                 </h1>
 
                 <ul className='uppercase flex flex-col p-4 text-[15px]'>
